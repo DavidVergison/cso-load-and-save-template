@@ -8,7 +8,7 @@ for (const element of saveElements) {
 }
 for (const element of loadElements) {
   element.addEventListener("click", async (event) => {
-    executeAction(event.target, load);
+    const tab = await executeAction(event.target, load);
     chrome.tabs.reload(tab.id);
   });
 }
@@ -25,6 +25,7 @@ async function executeAction(targetSlot, targetFunc) {
     // Log exceptions
     console.log(JSON.stringify(err));
   }
+  return tab;
 }
 
 function save(slot) {
