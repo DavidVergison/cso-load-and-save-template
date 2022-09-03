@@ -1,0 +1,17 @@
+{
+  "name": "Cso save & load",
+  "description": "Cso character sheet save & load Extensions",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "menu.html",
+    "default_icon": "logocso32.png"
+  },
+  "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "host_permissions": [
+    "https://charactersheetonline.com/templateEditor/creation"
+  ],
+  "background": {
+    "service_worker": "back.js"
+  }
+}
