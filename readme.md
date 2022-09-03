@@ -10,7 +10,8 @@ This is not really modifying a template, but it allows to recreate one from a gi
 4) click on save or load from one of the 5 slots
 
 ### How to download this
-
+choose the latest version here :
+https://github.com/DavidVergison/cso-load-and-save-template/releases
 
 ### How to load an unpacked extension
 https://developer.chrome.com/docs/extensions/mv3/getstarted/#unpacked
